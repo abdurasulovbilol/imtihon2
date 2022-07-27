@@ -137,8 +137,14 @@ form button {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 600px) {
+  form button {
+    position: static;
+    margin-top: 20px;
+  }
+}
 .section2-color {
-  background-color: darkblue;
+  background-color: rgb(4, 4, 72);
 }
 
 .section2 {
@@ -153,9 +159,18 @@ form button {
 }
 .section2 p {
   color: gray;
+  margin: 30px 0px;
 }
 .section2__text1 {
   max-width: 400px;
+}
+.section2__text1 a {
+  padding: 10px 30px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
 }
 .section2__text {
   display: flex;
@@ -168,11 +183,45 @@ form button {
   margin: 60px 0px;
 }
 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 769px) {
   .section2 {
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .section2 p {
+    margin: 30px 20px;
   }
   .section2__text {
     flex-wrap: wrap;
+  }
+  .section2__text1 {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+.section3 {
+  display: flex;
+  justify-content: space-between;
+}
+.section3__text {
+  max-width: 400px;
+  margin-top: 100px;
+}
+.section3__text h3 {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 1110px) {
+  .section3 {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .section3__img img {
+    max-width: 385px;
+    margin: 0 auto;
+  }
+  .section3__text {
+    margin-top: -80px;
   }
 }/*# sourceMappingURL=main.css.map */
