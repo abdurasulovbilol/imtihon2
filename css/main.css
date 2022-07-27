@@ -169,4 +169,7 @@ form button {
   .section2 {
     flex-wrap: wrap;
   }
+  .section2__text {
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=main.css.map */
