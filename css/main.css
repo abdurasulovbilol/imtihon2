@@ -1,6 +1,6 @@
 body {
   background-color: #edf3f8;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .wrapper > img {
@@ -72,6 +72,9 @@ body {
 }
 .section1__mobile-img img {
   max-width: 590px;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .section1__text {
   margin-top: 150px;
